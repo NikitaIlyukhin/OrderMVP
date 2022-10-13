@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#773D98E8"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/frag2_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/order_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/order_lbl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hello" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="311dp"
+        android:layout_height="49dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_lbl"
+        app:layout_constraintVertical_bias="0.033">
+
+        <RadioButton
+            android:id="@+id/radioButtonHusband"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/order_tea" />
+
+        <RadioButton
+            android:id="@+id/radioButtonKitten"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:text="@string/order_coffee" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/order_more_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="@string/order_more"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spinnerTea" />
+
+    <TextView
+        android:id="@+id/milk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/order_milk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_more_lbl" />
+
+    <TextView
+        android:id="@+id/sugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/order_sugar"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxMilk"
+        app:layout_constraintTop_toBottomOf="@+id/order_more_lbl" />
+
+    <TextView
+        android:id="@+id/lemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/order_lemon"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxSugar"
+        app:layout_constraintTop_toBottomOf="@+id/order_more_lbl" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMilk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintTop_toBottomOf="@+id/order_more_lbl"
+        app:layout_constraintStart_toEndOf="@+id/milk"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/sugar"
+        app:layout_constraintTop_toBottomOf="@+id/order_more_lbl"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintTop_toBottomOf="@+id/order_more_lbl"
+        app:layout_constraintStart_toEndOf="@+id/lemon"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/spinnerTea"
+        android:layout_width="158dp"
+        android:layout_height="50dp"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="50dp" />
+    <Spinner
+        android:id="@+id/spinnerCoffee"
+        android:layout_width="158dp"
+        android:layout_height="50dp"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="50dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxMilk"></Button>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Order</string>
+    <string name="frag1_text">Login</string>
+    <string name="frag2_text">Order</string>
+    <string name="frag3_text">Order Info</string>
+    <string name="order_btn">Сделать заказ</string>
+    <string name="order_lbl">Сделать заказ:</string>
+    <string name="order_tea">Чай</string>
+    <string name="order_coffee">Кофе</string>
+    <string name="order_more">Что добавить в заказ?</string>
+    <string name="order_sugar">Сахар</string>
+    <string name="order_milk">Молоко</string>
+    <string name="order_lemon">Лимон</string>
+</resources>
